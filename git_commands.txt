@@ -1,0 +1,9 @@
+The following is my GitHub link:
+https://github.com/mdeng1110/git-basics
+
+The following are the list of Git Commands that I used:
+git add .
+
+git commit -m "add git commands file"
+
+git push
