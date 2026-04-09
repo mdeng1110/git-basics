@@ -1,9 +1,26 @@
 The following is my GitHub link:
 https://github.com/mdeng1110/git-basics
 
+
 The following are the list of Git Commands that I used:
 git add .
-
 git commit -m "add git commands file"
-
 git push
+
+
+The following includes the output:
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git add .
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git commit -m "add git commands file"
+[main b02c182] add git commands file
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+ create mode 100644 git_commands.txt
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 506 bytes | 126.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mdeng1110/git-basics.git
+   f1ee12f..b02c182  main -> main
+(base) PS C:\Users\butte\Documents\Projects\git-basics> 
