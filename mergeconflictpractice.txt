@@ -1,5 +1,7 @@
 I learned that you can have merge conflicts between two branches, if 
-the file names have the same name.  You can resolve the merge conflict.  
+the file names have the same name.  When you have a merge conflict, 
+it will display the code from both files and let you know the options for what 
+you want to keep in order to resolve the merge conflict.  
 
 The following includes the commands that I used for the merge conflict practice:
 
