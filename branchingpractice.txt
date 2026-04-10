@@ -1,0 +1,47 @@
+
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git merge --help
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git pull
+Already up to date.
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git merge mybranch
+Updating 250af6c..df9bc97
+Fast-forward
+ README.md        | 2 +-
+ mybranchfile.log | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)        git log 
+commit df9bc970a116ea89088215f1995a08934fc21c26 (HEAD -> main, origin/mybranch, mybranch)
+Author: mdeng1110 <maydeng1110@yahoo.com>ts\git-basics> 
+Date:   Thu Apr 9 21:16:07 2026 -0700
+
+    add my new branch file
+
+commit 250af6c956fc2c7650af5fcdfca4e4580536f24e (origin/main, origin/HEAD)
+Author: mdeng1110 <maydeng1110@yahoo.com>
+Date:   Wed Apr 8 21:36:18 2026 -0700
+
+    updated the format of the git commands file
+
+commit b02c1823e32bde616a10a1a230a686a420668c79
+Author: mdeng1110 <maydeng1110@yahoo.com>
+Date:   Wed Apr 8 21:34:52 2026 -0700
+
+    add git commands file
+:
+
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git add .
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git commit -m "add merge mybranch to main"
+[main 76bb2fc] add merge mybranch to main
+ 1 file changed, 31 insertions(+)
+ create mode 100644 branchingpractice.txt
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 861 bytes | 287.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mdeng1110/git-basics.git
+   250af6c..76bb2fc  main -> main
+(base) PS C:\Users\butte\Documents\Projects\git-basics> 

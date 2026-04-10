@@ -1,0 +1,46 @@
+(base) PS C:\Users\butte\Documents\Projects\git-basics
+  python .\pythonfile.py
+Hello butte
+3 + 5 = 8
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git checkout mybranch
+error: Your local changes to the following files would be overwritten by checkout:
+        pythonfile.py
+Please commit your changes or stash them before you switch branches.
+Aborting
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git add .                 
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git commit -m "update python file"
+[main 489bb17] update python file
+ 1 file changed, 7 insertions(+)
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 400 bytes | 133.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mdeng1110/git-basics.git
+   81622e8..489bb17  main -> main
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git checkout mybranch
+Switched to branch 'mybranch'
+Your branch is up to date with 'origin/mybranch'.
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git add .                         
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git commit -m "add new mypython file"
+[mybranch 180672c] add new mypython file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 pythonfile.py
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mdeng1110/git-basics.git
+   df9bc97..180672c  mybranch -> mybranch
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git merge main
+Auto-merging pythonfile.py
+CONFLICT (add/add): Merge conflict in pythonfile.py
+Automatic merge failed; fix conflicts and then commit the result.
+(base) PS C:\Users\butte\Documents\Projects\git-basics> 

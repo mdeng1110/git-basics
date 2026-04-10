@@ -1,0 +1,54 @@
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Hello World!
+(base) PS C:\Users\butte\Documents\Projects\git-basics
+  python pythonfile.py
+Hello World!
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Traceback (most recent call last):
+  File "C:\Users\butte\Documents\Projects\git-basics\pythonfile.py", line 6, in <module>
+    main()
+  File "C:\Users\butte\Documents\Projects\git-basics\pythonfile.py", line 4, in main
+    print(f"Hello {os.getuid()}")
+                   ^^^^^^^^^
+AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Traceback (most recent call last):
+  File "C:\Users\butte\Documents\Projects\git-basics\pythonfile.py", line 6, in <module>
+    main()
+  File "C:\Users\butte\Documents\Projects\git-basics\pythonfile.py", line 4, in main
+    print(f"Hello {os.getuser()}")
+                   ^^^^^^^^^^
+AttributeError: module 'os' has no attribute 'getuser'
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Hello None
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Hello butte
+(base) PS C:\Users\butte\Documents\Projects\git-ba    > git add .
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git commit -m "add git ignore file"
+[main b52e3de] add git ignore file
+ 4 files changed, 72 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ create mode 100644 .gitignorepractice.txt
+ create mode 100644 pythonfile.py
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.33 KiB | 226.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mdeng1110/git-basics.git
+   76bb2fc..b52e3de  main -> main
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) PS C:\Users\butte\Documents\Projects\git-basics> 
