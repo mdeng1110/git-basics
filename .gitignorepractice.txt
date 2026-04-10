@@ -1,0 +1,26 @@
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Hello World!
+(base) PS C:\Users\butte\Documents\Projects\git-basics
+  python pythonfile.py
+Hello World!
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Traceback (most recent call last):
+  File "C:\Users\butte\Documents\Projects\git-basics\pythonfile.py", line 6, in <module>
+    main()
+  File "C:\Users\butte\Documents\Projects\git-basics\pythonfile.py", line 4, in main
+    print(f"Hello {os.getuid()}")
+                   ^^^^^^^^^
+AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Traceback (most recent call last):
+  File "C:\Users\butte\Documents\Projects\git-basics\pythonfile.py", line 6, in <module>
+    main()
+  File "C:\Users\butte\Documents\Projects\git-basics\pythonfile.py", line 4, in main
+    print(f"Hello {os.getuser()}")
+                   ^^^^^^^^^^
+AttributeError: module 'os' has no attribute 'getuser'
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Hello None
+(base) PS C:\Users\butte\Documents\Projects\git-basics> python pythonfile.py
+Hello butte
+(base) PS C:\Users\butte\Documents\Projects\git-ba> 

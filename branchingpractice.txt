@@ -29,3 +29,19 @@ Date:   Wed Apr 8 21:34:52 2026 -0700
 
     add git commands file
 :
+
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git add .
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git commit -m "add merge mybranch to main"
+[main 76bb2fc] add merge mybranch to main
+ 1 file changed, 31 insertions(+)
+ create mode 100644 branchingpractice.txt
+(base) PS C:\Users\butte\Documents\Projects\git-basics> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 861 bytes | 287.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mdeng1110/git-basics.git
+   250af6c..76bb2fc  main -> main
+(base) PS C:\Users\butte\Documents\Projects\git-basics> 
